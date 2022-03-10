@@ -14,7 +14,9 @@
     "@strapi/plugin-graphql": "4.0.0",
     "@strapi/plugin-i18n": "4.0.0",
     "@strapi/plugin-users-permissions": "4.0.0",
+    "@strapi/provider-upload-aws-s3": "^4.1.3",
     "@strapi/strapi": "4.0.0",
+    "pg": "^8.7.3",
     "sqlite3": "5.0.2"
   },
   "author": {
