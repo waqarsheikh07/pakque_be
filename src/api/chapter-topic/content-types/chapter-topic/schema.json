@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chapter_topics",
+  "info": {
+    "singularName": "chapter-topic",
+    "pluralName": "chapter-topics",
+    "displayName": "chapterTopic"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "Images": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "chapter": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::chapter.chapter",
+      "inversedBy": "chapter_topics"
+    }
+  }
+}
