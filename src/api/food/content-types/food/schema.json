@@ -40,6 +40,12 @@
       "relation": "manyToOne",
       "target": "api::city.city",
       "inversedBy": "foods"
+    },
+    "province": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::province.province",
+      "inversedBy": "foods"
     }
   }
 }

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "province",
     "pluralName": "provinces",
-    "displayName": "Province"
+    "displayName": "Province",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -23,6 +24,24 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::city.city",
+      "mappedBy": "province"
+    },
+    "cultures": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::culture.culture",
+      "mappedBy": "province"
+    },
+    "foods": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::food.food",
+      "mappedBy": "province"
+    },
+    "heroes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::hero.hero",
       "mappedBy": "province"
     }
   }

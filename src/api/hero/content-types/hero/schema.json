@@ -45,6 +45,12 @@
       "relation": "manyToOne",
       "target": "api::city.city",
       "inversedBy": "heroes"
+    },
+    "province": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::province.province",
+      "inversedBy": "heroes"
     }
   }
 }

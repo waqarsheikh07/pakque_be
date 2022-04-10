@@ -4,7 +4,8 @@
   "info": {
     "singularName": "city",
     "pluralName": "cities",
-    "displayName": "City"
+    "displayName": "City",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,11 +21,12 @@
       "required": true
     },
     "videos": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "videos"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "province": {
       "type": "relation",
@@ -42,12 +44,6 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::food.food",
-      "mappedBy": "city"
-    },
-    "cultures": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::culture.culture",
       "mappedBy": "city"
     }
   }
