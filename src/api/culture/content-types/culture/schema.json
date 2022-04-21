@@ -4,7 +4,8 @@
   "info": {
     "singularName": "culture",
     "pluralName": "cultures",
-    "displayName": "Culture"
+    "displayName": "Culture",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,18 +17,12 @@
       "required": true
     },
     "Images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
-    },
-    "Videos": {
-      "allowedTypes": [
-        "videos"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "description": {
       "type": "richtext",
@@ -38,6 +33,9 @@
       "relation": "manyToOne",
       "target": "api::province.province",
       "inversedBy": "cultures"
+    },
+    "video": {
+      "type": "string"
     }
   }
 }
