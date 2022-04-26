@@ -34,12 +34,6 @@
       "target": "api::province.province",
       "inversedBy": "cities"
     },
-    "heroes": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::hero.hero",
-      "mappedBy": "city"
-    },
     "foods": {
       "type": "relation",
       "relation": "oneToMany",

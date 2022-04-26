@@ -4,7 +4,7 @@
   "info": {
     "singularName": "hero",
     "pluralName": "heroes",
-    "displayName": "Hero",
+    "displayName": "HeroAndHistory",
     "description": ""
   },
   "options": {
@@ -31,26 +31,6 @@
     "description": {
       "type": "richtext",
       "required": true
-    },
-    "Videos": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "videos"
-      ]
-    },
-    "city": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::city.city",
-      "inversedBy": "heroes"
-    },
-    "province": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::province.province",
-      "inversedBy": "heroes"
     }
   }
 }

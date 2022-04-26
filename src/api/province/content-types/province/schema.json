@@ -37,12 +37,6 @@
       "relation": "oneToMany",
       "target": "api::food.food",
       "mappedBy": "province"
-    },
-    "heroes": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::hero.hero",
-      "mappedBy": "province"
     }
   }
 }
