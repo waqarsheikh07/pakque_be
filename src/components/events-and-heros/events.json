@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_events_and_heros_events",
+  "info": {
+    "displayName": "events",
+    "icon": "globe-asia",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "event": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

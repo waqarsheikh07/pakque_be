@@ -4,7 +4,7 @@
   "info": {
     "singularName": "hero",
     "pluralName": "heroes",
-    "displayName": "HeroAndHistory",
+    "displayName": "History",
     "description": ""
   },
   "options": {
@@ -12,25 +12,19 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "Duration": {
       "type": "string",
       "required": true
     },
-    "Year": {
-      "type": "integer",
-      "required": true
+    "hero": {
+      "type": "component",
+      "repeatable": true,
+      "component": "events-and-heros.events-and-heros"
     },
-    "Images": {
-      "type": "media",
-      "multiple": true,
-      "required": true,
-      "allowedTypes": [
-        "images"
-      ]
-    },
-    "description": {
-      "type": "richtext",
-      "required": true
+    "Event": {
+      "type": "component",
+      "repeatable": true,
+      "component": "events-and-heros.events"
     }
   }
 }
