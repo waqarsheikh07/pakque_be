@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "national_heroes",
+  "info": {
+    "singularName": "national-hero",
+    "pluralName": "national-heroes",
+    "displayName": "NationalHero"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Duration": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext",
+      "required": true
+    },
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "heroes_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::heroes-category.heroes-category",
+      "inversedBy": "national_heroes"
+    }
+  }
+}

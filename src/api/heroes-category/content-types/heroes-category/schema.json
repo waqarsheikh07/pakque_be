@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "heroes_categories",
+  "info": {
+    "singularName": "heroes-category",
+    "pluralName": "heroes-categories",
+    "displayName": "HeroesCategory"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "national_heroes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::national-hero.national-hero",
+      "mappedBy": "heroes_category"
+    }
+  }
+}
