@@ -20,25 +20,21 @@
       "type": "richtext",
       "required": true
     },
-    "videos": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "videos"
-      ]
-    },
     "province": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::province.province",
       "inversedBy": "cities"
     },
-    "foods": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::food.food",
-      "mappedBy": "city"
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Video": {
+      "type": "string"
     }
   }
 }

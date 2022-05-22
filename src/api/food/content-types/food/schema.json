@@ -28,12 +28,6 @@
       "type": "richtext",
       "required": true
     },
-    "city": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::city.city",
-      "inversedBy": "foods"
-    },
     "province": {
       "type": "relation",
       "relation": "manyToOne",
