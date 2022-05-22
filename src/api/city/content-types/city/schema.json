@@ -27,11 +27,12 @@
       "inversedBy": "cities"
     },
     "Image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Video": {
       "type": "string"
