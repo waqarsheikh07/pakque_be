@@ -24,6 +24,12 @@
       "relation": "oneToMany",
       "target": "api::chapter-topic.chapter-topic",
       "mappedBy": "chapter"
+    },
+    "quizzes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::quiz.quiz",
+      "mappedBy": "chapter"
     }
   }
 }
